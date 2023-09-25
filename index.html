@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propieteer HOME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">   
+            <a class="menu" id="logo" href="index.html"> propieteer </a>
+            <ul>   
+                <li class="menu">
+                    <a href="">Agentes</a>
+                </li>
+                <li class="menu">
+                    <a href="">Propiedades</a>
+                </li>
+                <li class="menu"> 
+                    <a href="">Vende</a>
+                </li>
+                <li class="menu">
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-medio">
+            <h1> propieteer </h1>
+            <div class = 'key-phrases'>
+                <div class = 'key-phrases'>Market Leaders</div>
+                <div class = 'key-phrases'>Exceptional Professionals</div>
+                <div class = 'key-phrases'>Value for Money</div>
+            </div>
+        </div>
+        <div id="background-vid">
+            <video src="./resources/video.mp4" autoplay muted loop>
+            </video>
+        </div>
+        <!-- viewBox le da un tamaño a la etiqueta: <min-x> <min-y> <width> <height> los dos primeros son el campo de vision, los ultimos 2 el "aumento" -->
+        <svg id="scroll-me" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet" >
+            <g fill="none" fill-rule="evenodd">
+                <!-- rect crea el rectangulo exterior, y le damos forma ovalada con rx-->
+                <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="2" rx="36"></rect>
+                <!-- cirlce sera el puntito dentro del rectangulo - 
+                r(tamaño) -->
+                <circle class="scroll-dot" cx="36.5" cy="31.5" r="5" fill="#FFF"></circle>
+            </g>
+        </svg>
+    </main>
+    <section>
+        <p>Info about us</p>
+    </section>
+    <footer>
+        <p>This is the footer</p>
+    </footer>
+    <script src="index_js.js"></script>
+</body>
+</html>
