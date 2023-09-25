@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    width: 350px;
+    height: 560px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 30px;
+    padding: 15px;
+    border-radius: 5px;
+    float: left;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin:5px 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+
+.Ubicacion {
+
+        width: 100%;
+        height: 150px;
+        margin: 10px 0;
+}
+
+.Precio {
+    font-size: 1.3rem !important ;
+    color: #090909 !important;
+    font-weight: bold !important;
+    margin: 0;
+}
+
+/* Estilos del Formulario */
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    width: 100%px;
+    background-color: #f9f7f7cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+form h2 {
+    margin-top: 5px;
+    text-align: center;
+}
+.enviar {
+    margin:10px 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.enviar:hover {
+      background-color: #bbbbbb;
+      transition: all 0.5s;
+}
+
+.cerrar {
+    margin:10px 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 3px;
+    background-color:#cf2c2c;
+    font-size: 1rem;
+
+}
+
+.cerrar:hover {
+    background-color: #ab0b0b;
+    transition: all 0.5s;
+}
+
+form label {
+    display: block;
+}
+form input {
+    margin:5px auto;
+    width: 100%;
+    height: 25px;
+
+    border-radius: 3px;
+
+}
+
+#FormContainer {
+    width: 350px;
+    background-color: #737070cc;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }

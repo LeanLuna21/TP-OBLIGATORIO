@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Card-Casa.css">
+    <title>Card</title>
+</head>
+
+<body>
+
+<main>
+<section>
+
+<!-- Card 1 -->
+<!----> 
+    <div class="card">
+        
+        <img src="https://www.canexel.es/wp-content/uploads/2021/06/casa-moderna-entramado-madera-barcelona-construccion-canexel-1.jpg" alt="Imagen de la casa">
+        <h3 style="text-align: center;">Casa en venta en Manzana D2 Lote 90, Neuquén</h3>
+        <p class="Precio">| 350.000 USD</p>
+        <hr>
+        <p>Descripción de la casa. Agregar información importante aquí.</p>
+        <button id="mostrarFormulario">Contactar</button>
+
+        <div class="Ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6205.534969768563!2d-68.06315099042675!3d-38.952139940799874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ba35eb8e35%3A0x6220acb810e3e2f5!2zTmV1cXXDqW4!5e0!3m2!1ses!2sar!4v1695501365423!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        </div>
+    </div>
+
+<!-- Card 2 -->
+<!---->       
+    <div class="card">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLLWrivEfZHuJaODDbZZ6b0r_0rhtXQ218Jw&usqp=CAU" alt="Imagen de la casa">
+        <h3 style="text-align: center;">Casa en venta en Belén 1000, Merlo, Buenos Aires</h3>
+        <p class="Precio">| 138.000 USD</p>
+        <hr>
+        <p>Descripción de la casa. Agregar información importante aquí.</p>
+        <button id="mostrarForm">Contactar</button>
+        
+        <div class="Ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104990.54774265036!2d-58.83590385948559!3d-34.68109485355766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc95434093dd6b%3A0x58d832f755e4a278!2sMerlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1695502159565!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Formulario de contacto -->
+<!---->
+    <div id="FormContainer" style="display: none;">
+        <form id="formulario">
+            <h2>Envianos un mensaje</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="celular">N* Telefono:</label>
+            <input type="tel" id="celular" name="celular"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="Mensaje">Mensaje:</label>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+            <input class="enviar" type="submit" value="Enviar">
+            <button class="cerrar" id="ocultarForm">Cerrar</button>
+        </form>
+    </div>
+
+</main>
+
+<script src="Card-Casa.js"></script>
+</body>
+</html>
