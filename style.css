@@ -1,0 +1,370 @@
+/* FUENTES */
+@font-face {
+    font-family: 'cursiva-elegante';
+    src: url('./fonts/Thesignature.ttf')format('truetype');
+} 
+*{
+    margin: 0; padding: 0;
+    font-family: 'Source Sans Pro',sans-serif; 
+    box-sizing: border-box;
+}
+
+#background-vid{
+    background-color: #3d0c1a95;
+}
+.body-index-page{
+    background-color: black;
+    color: azure;
+    font-weight: 300;
+    line-height: 2em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-index-page{
+    background: transparent;
+    width: 100%;
+    height: 15%;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);    
+    position: absolute;
+    animation: initializeHeader .5s ease-in-out 1 both;
+    /*para que se muestre primero el resto y desp el header*/
+    transition: color .5s ease-in-out, background .5s ease-in-out;
+    z-index: 5;
+} 
+
+.container-nav{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/* #logo{
+    margin: 0px 20px;
+    font-size: 1.5rem;
+    align-self:center;
+    justify-self:start;
+    padding-inline-start: 15%;
+} */
+.logo{
+    width: 20vw;
+    max-width: 100px;
+    margin:5% 15% ;
+    opacity: 0.8;
+    border-radius: 5%;
+}
+.container-nav>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu, .menu>a{
+    color: azure;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-right: 2%;
+}
+.line{
+    display: inline-block;
+    position: relative;
+    color:azure;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: azure;
+    transform-origin: middle;
+    transition: transform 0.25s ease-out;
+}
+.line:hover::after{
+    transform:scaleX(1);
+    transform-origin: middle;
+}
+
+main.index{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    z-index: 1;
+}
+.container-medio{
+    grid-column: 2/3;
+    width: 100%;
+    height: 25%;
+    align-self:center;
+    justify-self:center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.container-medio>h1{
+    text-transform: lowercase;
+    font-weight: 100;
+    line-height: 7rem;
+    text-align: center;
+    font-size: 10rem; 
+    font-family: 'cursiva-elegante';
+}
+
+.key-phrases{
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: center;
+    padding: 0% 3%;
+}
+#background-vid{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    animation: videoFadeIn 2s ease-out 1;
+    z-index: -5;
+}
+#background-vid video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    transform: translate(-50%,-50%);
+}
+#scroll-me {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    width: 40px;
+    opacity: .35;
+    transform: translateX(-50%);
+    animation: highlightScroll 1s ease-in-out infinite alternate;
+    transition: opacity .25s ease-in-out, animation .25s ease-in-out;
+    z-index: 3;
+}
+.scroll-dot{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(50%);
+    transform-origin: 0px 0px;
+    animation: circleScroll 2s cubic-bezier(.65,-.55,.25,1.5) infinite;
+}
+
+section{
+    display: flex;
+    position: relative;
+    background-color:#3d0c1a;
+    min-height: 110vh;
+    max-height: min-content; 
+    width: 100%;
+    align-items: center;
+}
+#about{
+    position: relative;
+    background-image: url(./resources/about-us-pic.webp);
+    background-repeat: no-repeat;
+    background-position: 12%;
+    background-size: contain;
+}
+.fondo-about{
+    min-height: 110vh;
+    background: linear-gradient(90deg,rgba(0,0,0,.15) 75%,rgba(15, 0, 0, 0.85) 100%);
+}
+.container-about{
+    height:80%;
+    margin: 5% 10% 0 40%;
+    min-width: 10vw;
+    display:flex;   
+}
+.nosotros{
+    background-color: rgba(4, 0, 5, 0.226);
+    border-radius: 10%;
+    padding: 5% 8% ; 
+}
+.nosotros>h2{
+    line-height: 4rem;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+.nosotros>p{
+    line-height: 2.5rem;
+}
+
+.bottom{
+    margin-top: 5%;
+    display:flex;
+    position: relative;
+    justify-content: right;
+    line-height: 5rem;
+    text-align: center;
+}
+.bottom>a{
+    padding: 5px 10px;
+    margin: 5px 10px;
+    align-self: center;
+    justify-content: right;
+    border: 2px solid rgba(255, 255, 255, 0.344);
+    line-height: 2rem;
+}
+.bottom>a:hover{
+    border: 2px solid azure;
+    background-color:rgba(244, 25, 25, 0.372);
+}
+.bottom>a:active{
+    background-color: azure;
+    color:#3d0c1a;
+}
+
+footer{
+    margin-top:50px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* css para las otras pestañas */
+/* esto afecta solo a las otras pestañas que no son index */
+.body-pestañas{
+    background-color: #3d0c1a;
+    color:aliceblue
+}
+.header-pestañas{
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0,0.5);
+}
+.main-pestañas>h2{
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: 6rem;
+    margin: 7% 0;
+    text-align: center;
+    font-size: 8rem; 
+    font-family: 'cursiva-elegante';
+}
+
+/*PESTAÑA AGENTES*/
+.profesionales-container{
+    display:grid;
+    gap: 3%;
+    margin: 2%;
+    grid-template-columns: repeat(auto-fit,minmax(38rem,1fr));
+}
+.container-card{
+    border: 5px solid rgb(255, 255, 255);
+    display:grid;
+    grid-template-areas: 
+    'foto nombre nombre . '
+    'foto nombre nombre profesion '
+    'foto nombre nombre . '
+    'foto matricula matricula . '
+    'foto desc desc desc '
+    'foto . cont cont ';
+    grid-template-columns: repeat(auto-fit,minmax(1fr,100%));
+}
+.photo{
+    grid-area: foto;
+    margin: 5%;
+    width: 200px;
+    align-self: center;
+}
+.name{
+    grid-area: nombre;
+    width:95%;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    justify-content: center;
+}
+.profesion{
+    grid-area: profesion;
+    justify-content: left;
+}
+.matricula{
+    grid-area: matricula;
+    margin: 5px 0 0 20px;
+}
+.descripcion{
+    grid-area: desc;
+}
+.container-contacto{
+    grid-area: cont;
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.contacto-mail, .contacto-tel{
+    height: fit-content;
+    justify-self: right;
+    margin-right: 5px;
+}
+.box-style{
+    display:flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+    li {
+        Display: inline-block;
+        
+     }
+
+
+
+
+@media screen and (max-width: 940px) {
+  
+    #about {
+        background-size: cover;
+    }
+    .container-about{
+        margin:10%
+    }
+}
+
+/*ANIMATION TRANSITIONS*/
+@keyframes initializeHeader {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes highlightScroll{
+    0%, 50% {
+        opacity: .35;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes videoFadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes circleScroll{
+    0%, 20% {
+        transform: translateY(0) scaleY(1);
+    }    
+}
