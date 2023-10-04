@@ -256,10 +256,87 @@ main.index {
 }
 
 footer {
+    color: #f3eef2;
+    background-color: rgb(0, 0, 0);
 
-    color: #ff34da;
-    background-color: rgb(10, 246, 22);
 }
+footer li{
+    display: inline-block;
+    text-decoration: none;
+}
+footer img{
+    width: 50px;
+
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+@media screen and (max-width: 940px) {
+
+    #about {
+        background-size: cover;
+    }
+
+    .container-about {
+        margin: 10%
+    }
+}
+
+/*ANIMATION TRANSITIONS*/
+@keyframes initializeHeader {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes highlightScroll {
+
+    0%,
+    50% {
+        opacity: .35;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes videoFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes circleScroll {
+
+    0%,
+    20% {
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+
+
 
 /* css para las otras pestañas */
 /* esto afecta solo a las otras pestañas que no son index */
@@ -1104,63 +1181,99 @@ textarea {
 }
 
 /*Finalizacion breakpoint Monitores*/
+
 /*PESTAÑA VENDE*/
 
 /*PESTAÑA CONTACTO*/
-
-
-@media screen and (max-width: 940px) {
-
-    #about {
-        background-size: cover;
-    }
-
-    .container-about {
-        margin: 10%
-    }
+.body-form {
+    background-image: url(./resources/casa_form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/*ANIMATION TRANSITIONS*/
-@keyframes initializeHeader {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.formulario{
+    background: rgba(0, 0, 0, 0);
+    grid-column: 2/5;
+    display: grid;
+    /* justify-content: center; */
+    gap: 10px;
+    margin: 3% auto;
+    grid-template-areas: 
+    'nombre ap'
+    'loc loc'
+    'mail tel'
+    'com com'
+    'com com'
+    'env borrar';
+    max-width: 80%;
+    
 }
 
-@keyframes highlightScroll {
-
-    0%,
-    50% {
-        opacity: .35;
-    }
-
-    100% {
-        opacity: 1;
-    }
+input{
+    color:azure;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(247, 245, 245, 0.475);
+    width: 100%;
+    padding: 25px 5px;
+    line-height: 2rem;
+    font-size: 1.3rem;
 }
-
-@keyframes videoFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+textarea{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(247, 245, 245, 0.475);
+    margin-top: 5px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
 }
+.enviar-form, .borrar-form{
+    background-color: rgba(230,230,255,0.8); /* Color de fondo para el botón */
+    color: #070707; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 75%;
+    justify-self: center;
 
-@keyframes circleScroll {
-
-    0%,
-    20% {
-        transform: translateY(0) scaleY(1);
-    }
 }
+.nombre-form{
+    grid-area: nombre;
+}
+.apellido-form{
+    grid-area: ap;
+}
+.localidad-form{
+    grid-area: loc;
+}
+.email-form{
+    grid-area: mail;
+}
+.tel-form{
+    grid-area: tel;
+}
+.comentarios-form{
+    grid-area: com;
+}
+.enviar-form{
+    grid-area: env;
+}
+.borrar-form{
+    grid-area: borrar;
+}
+.error{
+    color: rgb(231, 220, 216);
+    background-color: rgb(74, 71, 255);
+    display: block;
+}
+.invalid{
+    border: solid rgb(41, 4, 4) 5px;
+    box-shadow: 0 0 10px darkgray;
+}
+   
