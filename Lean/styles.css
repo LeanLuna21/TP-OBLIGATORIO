@@ -2,7 +2,15 @@
 @font-face {
     font-family: 'cursiva-elegante';
     src: url('./fonts/Thesignature.ttf')format('truetype');
-}
+}   
+/* 
+    font-family: 'Edu QLD Beginner', cursive;
+    font-family: 'Ms Madi', cursive;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+ */
+
 
 * {
     margin: 0;
@@ -44,13 +52,6 @@
     grid-template-columns: auto auto;
 }
 
-/* #logo{
-    margin: 0px 20px;
-    font-size: 1.5rem;
-    align-self:center;
-    justify-self:start;
-    padding-inline-start: 15%;
-} */
 .logo {
     width: 20vw;
     max-width: 100px;
@@ -68,12 +69,12 @@
 
 .menu,
 .menu>a {
-    color: azure;
+    color: rgb(249, 247, 247);
     text-decoration: none;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-right: 2%;
+    font-size: 1.2rem;
 }
 
 .line {
@@ -133,6 +134,7 @@ main.index {
     align-items: center;
     justify-content: center;
     padding: 0% 3%;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 #background-vid {
@@ -184,34 +186,30 @@ main.index {
 .index-section {
     display: flex;
     position: relative;
-    background-color: #3d0c1a;
+    background-image: url(./resources/about-us-pic.webp),
+    linear-gradient(to bottom, #545e83, #6b6d95, #827da7, #9a8cb9, #b39cca, #b59dcc, #b69fcf, #b8a0d1, #a393c5, #8d87b9, #787bac, #626f9f);
+    background-repeat: no-repeat;
+    background-position: 12%;
+    background-size: contain;
+    opacity: 0.9;
     min-height: 110vh;
     max-height: min-content;
     width: 100%;
     align-items: center;
 }
 
-#about {
-    position: relative;
-    background-image: url(./resources/about-us-pic.webp);
-    background-repeat: no-repeat;
-    background-position: 12%;
-    background-size: contain;
-}
-
 .fondo-about {
     min-height: 110vh;
-    background: linear-gradient(90deg, rgba(0, 0, 0, .15) 75%, rgba(15, 0, 0, 0.85) 100%);
 }
 
 .container-about {
     height: 80%;
-    margin: 5% 10% 0 40%;
-    min-width: 10vw;
+    margin: 5% 8% 5% 40%;
     display: flex;
+
 }
 
-.nosotros {
+.nosotros{
     background-color: rgba(4, 0, 5, 0.226);
     border-radius: 10%;
     padding: 5% 8%;
@@ -221,14 +219,24 @@ main.index {
     line-height: 4rem;
     margin-bottom: 5px;
     font-size: 2rem;
+    font-family: 'Ysabeau SC';
 }
 
 .nosotros>p {
-    line-height: 2.5rem;
+    color: rgb(224, 222, 251);
+    line-height: 2rem;
+    font-family: 'Wix Madefor Display';
+    font-size: 1.2rem;
 }
-
+.brand {
+    font-weight: 600;
+    text-shadow: 0 0 2px azure;
+    font-family: 'Edu QLD Beginner';
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
 .bottom {
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     position: relative;
     justify-content: right;
@@ -247,7 +255,7 @@ main.index {
 
 .bottom>a:hover {
     border: 2px solid azure;
-    background-color: rgba(244, 25, 25, 0.372);
+    background-color: rgba(134, 151, 197, 0.658);
 }
 
 .bottom>a:active {
@@ -257,15 +265,16 @@ main.index {
 
 footer {
     color: #f3eef2;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 39, 39, 0.723);
 
 }
 footer li{
     display: inline-block;
     text-decoration: none;
 }
-footer img{
-    width: 50px;
+
+footer li img{
+    width: 30px;
 
 }
 footer a{
@@ -275,13 +284,9 @@ footer a{
 }
 
 
+@media screen and (max-width: 960px) {
 
-
-
-
-@media screen and (max-width: 940px) {
-
-    #about {
+    .index-section  {
         background-size: cover;
     }
 
@@ -335,24 +340,24 @@ footer a{
     }
 }
 
-
-
-
 /* css para las otras pestañas */
 /* esto afecta solo a las otras pestañas que no son index */
 .body-pestañas {
-    background-color: #3d0c1a;
-    color: aliceblue
+    background-image: linear-gradient(to bottom, #545e83, #6b6d95, #827da7, #9a8cb9, #b39cca, #b59dcc, #b69fcf, #b8a0d1, #a393c5, #8d87b9, #787bac, #626f9f);
 }
 
 .header-pestañas {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.373);
 }
-
-.main-pestañas>h2 {
+.main-pestañas{
+    padding: 0 20px 50px;
+}
+.main-pestañas>h2{
+    color: azure;
+    text-shadow: 0 0 10px black;
     text-transform: capitalize;
     font-weight: 100;
     line-height: 6rem;
@@ -364,53 +369,64 @@ footer a{
 
 .intro-main {
     line-height: 2rem;
-    margin: 0 5% 1%;
-}
-
-.intro-main span {
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 8% 2%;
+    font-size: 1.2rem;
+    font-family: 'Wix Madefor Display';
+    text-shadow: 0 0 5px rgb(209, 209, 211);
 }
 
 .intro-link {
-    margin-top: 2%;
     text-align: center;
+    margin: 0 8% 2%;
 }
 
 .intro-link>a {
-    color: #ffffffcb;
+    color: #faf9fcfc;
+    text-shadow: 0 0 5px rgb(29, 7, 128);
+    box-shadow: 0 0 3px rgb(34, 23, 235);;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 5px 25px;
-    border: 2px solid rgba(241, 124, 124, 0.487);
+    padding: 5px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.344);
     line-height: 2rem;
 }
 
 .intro-link>a:hover {
     border: 2px solid azure;
-    background-color: rgba(244, 25, 25, 0.372);
+    background-color: rgba(134, 151, 197, 0.658);
 }
 
 .intro-link>a:active {
     background-color: azure;
-    color: #3d0c1a;
+    color: #010101;
+    text-shadow: none;
 }
 
-.main-pestañas h3 {
+.fondo-cards>h3, .main-pestañas>h3 {
     margin: 2% 0 4% 3%;
+    font-size: 1.5rem;
+    font-family: 'Ysabeau SC';
+    text-transform: uppercase;
+    color: azure;
+    text-shadow: 0 0 10px black;
 }
-
+.fondo-cards{
+    background-color: rgba(75, 68, 80, 0.331);
+    padding: 50px 20px;
+    border-radius: 20px;
+    z-index: -5;
+}
 
 /*PESTAÑA AGENTES*/
 .profesionales-container {
     display: grid;
+    height: 100%;
     gap: 3%;
     margin: 2%;
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
 }
-
 .container-card {
-    border: 5px solid rgb(6, 6, 6);
+    border: 2px solid rgb(6, 6, 6);
     background-color: aliceblue;
     border-radius: 20px;
     color: #090909;
@@ -425,52 +441,50 @@ footer a{
     grid-template-columns: repeat(auto-fit, minmax(1fr, 100%));
 }
 
-.photo {
+.prof-photo {
     grid-area: foto;
     margin: 5%;
     width: 200px;
     align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.381);
+    border-radius: 20px;
 }
-
 .name {
     grid-area: nombre;
     width: 95%;
-    border-right: 2px solid rgb(99, 4, 4);
-    border-bottom: 2px solid rgb(94, 5, 5);
+    border-bottom: 1px solid rgb(0, 0, 0);
     justify-content: center;
 }
-
 .profesion {
     grid-area: profesion;
     justify-content: left;
-}
 
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
 .matricula {
     grid-area: matricula;
     margin: 5px 0 0 20px;
 }
-
 .descripcion {
     grid-area: desc;
 }
-
 .container-contacto {
     grid-area: cont;
     display: grid;
     grid-template-columns: auto auto;
     margin-right: 30px;
 }
-
 .container-contacto a {
-    color: #f429d9
+    color: rgb(15, 7, 112);
 }
-
+.container-contacto a:active{
+    color: #81b2e6;
+}
 .contacto-mail,
 .contacto-tel {
     height: fit-content;
     justify-self: right;
 }
-
 .box-style {
     display: flex;
     align-items: center;
@@ -478,6 +492,22 @@ footer a{
     margin-right: 4px;
 }
 
+@media screen and (max-width: 730px) {
+    .container-card{
+        display:flex;
+        flex-direction: column;
+        max-width: 75vw;
+        padding-bottom: 25px;
+        height:100%
+    }
+    .intro-link{
+        margin: 25px;
+    }
+    .fondo-cards{
+        padding-bottom: 100px;
+    } 
+
+}
 
 /*PESTAÑA PROPIEDADES*/
 /* Estilos generales */
@@ -713,14 +743,7 @@ textarea {
 /**/
 /**/
 /**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+
 @media screen and (max-width: 480px) {
     /*Inicio breakpoint smarphones*/
 
@@ -945,14 +968,7 @@ textarea {
 /**/
 /**/
 /**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+
 @media screen and (min-width: 1700px) {
     /*Inicio breakpoint Monitores*/
 
@@ -1183,8 +1199,11 @@ textarea {
 /*Finalizacion breakpoint Monitores*/
 
 /*PESTAÑA VENDE*/
-
-/*PESTAÑA CONTACTO*/
+.form-intro{
+    border-radius: 25px;
+    padding: 2rem;
+    text-align: center;
+}
 .body-form {
     background-image: url(./resources/casa_form.jpg);
     background-position: center;
@@ -1194,7 +1213,7 @@ textarea {
 }
 
 .formulario{
-    background: rgba(0, 0, 0, 0);
+    background: rgba(239, 238, 238, 0);
     grid-column: 2/5;
     display: grid;
     /* justify-content: center; */
@@ -1207,41 +1226,54 @@ textarea {
     'com com'
     'com com'
     'env borrar';
-    max-width: 80%;
+    max-width: 60%;
     
 }
 
 input{
-    color:azure;
+    color:#4c4c4c;
     border: none;
     border-radius: 5px;
-    background-color: rgba(247, 245, 245, 0.475);
+    background-color: rgba(214, 214, 214, 0.653);
     width: 100%;
     padding: 25px 5px;
     line-height: 2rem;
     font-size: 1.3rem;
+    font-weight: 500;
+}
+input::placeholder{
+    color:#020101;
+    font-weight: 300;
 }
 textarea{
+    color:#4c4c4c;
     border: none;
     border-radius: 5px;
-    background-color: rgba(247, 245, 245, 0.475);
+    background-color: rgba(214, 214, 214, 0.653);
     margin-top: 5px;
     width: 100%;
     max-width: 100%;
     max-height: 200px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+textarea::placeholder{
+    color:#070707;
+    font-weight: 300;
 }
 .enviar-form, .borrar-form{
-    background-color: rgba(230,230,255,0.8); /* Color de fondo para el botón */
-    color: #070707; /* Color del texto del botón */
+    background-color: rgba(230,230,255,0.8); 
+    color: #070707;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 1rem; 
     font-weight: bold;
     margin-top: 10px;
-    width: 75%;
-    justify-self: center;
-
+    width: 50%;
+    justify-self:center;
 }
 .nombre-form{
     grid-area: nombre;
@@ -1268,12 +1300,14 @@ textarea{
     grid-area: borrar;
 }
 .error{
-    color: rgb(231, 220, 216);
-    background-color: rgb(74, 71, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(202, 64, 64, 0.497);
+    width: 40%;
+    border-radius: 7px;
+    text-align: center;
     display: block;
 }
 .invalid{
-    border: solid rgb(41, 4, 4) 5px;
-    box-shadow: 0 0 10px darkgray;
+    box-shadow: 0 0 10px rgb(246, 13, 13);
 }
    
