@@ -10,8 +10,9 @@
     font-family: 'Sacramento', cursive;
     font-family: 'Wix Madefor Display', sans-serif;
     font-family: 'Ysabeau SC', sans-serif;
- */
-
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+*/
 
 * {
     margin: 0;
@@ -1108,9 +1109,9 @@ textarea {
 }
 
 .body-form {
-    background-image: url("https://raw.githubusercontent.com/LeanLuna21/TP-OBLIGATORIO/main/imagenes%20de%20fondo/imagereader%20(7).webp?token=GHSAT0AAAAAACGJIAKHBFHQVMFUJZFQKRU6ZI7SWLQ");
-    /* background-image: url("https://raw.githubusercontent.com/LeanLuna21/TP-OBLIGATORIO/main/imagenes%20de%20fondo/imagereader%20(6).webp?token=GHSAT0AAAAAACGJIAKGBGKSYHE2KFPTJHL4ZI7SZ2A");
-    background-image: url(./resources/casa-form.jpg); */
+    /* background-image: url("https://raw.githubusercontent.com/LeanLuna21/TP-OBLIGATORIO/main/imagenes%20de%20fondo/imagereader%20(7).webp?token=GHSAT0AAAAAACGJIAKHBFHQVMFUJZFQKRU6ZI7SWLQ");
+     background-image: url("https://raw.githubusercontent.com/LeanLuna21/TP-OBLIGATORIO/main/imagenes%20de%20fondo/imagereader%20(6).webp?token=GHSAT0AAAAAACGJIAKGBGKSYHE2KFPTJHL4ZI7SZ2A"); */
+    background-image: url(./resources/casa_form.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1185,15 +1186,17 @@ textarea::placeholder {
     width: 50%;
     justify-self: center;
 }
+
 .enviar-form:hover,
-.borrar-form:hover{
+.borrar-form:hover {
     background-color: rgba(146, 146, 193, 0.8);
 }
+
 .enviar-form:active,
-.borrar-form:active{
+.borrar-form:active {
     background-color: rgba(73, 73, 110, 0.8);
-    color:azure
-}   
+    color: azure
+}
 
 .nombre-form {
     grid-area: nombre;
@@ -1242,10 +1245,11 @@ textarea::placeholder {
 
 
 @media screen and (max-width: 800px) {
-    .formulario{
+    .formulario {
         max-width: 80%;
     }
-    .container-formulario input{
+
+    .container-formulario input {
         width: 100%;
     }
 }
