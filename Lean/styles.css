@@ -2,7 +2,8 @@
 @font-face {
     font-family: 'cursiva-elegante';
     src: url('./fonts/Thesignature.ttf')format('truetype');
-}   
+}
+
 /* 
     font-family: 'Edu QLD Beginner', cursive;
     font-family: 'Ms Madi', cursive;
@@ -187,7 +188,7 @@ main.index {
     display: flex;
     position: relative;
     background-image: url(./resources/about-us-pic.webp),
-    linear-gradient(to bottom, #545e83, #6b6d95, #827da7, #9a8cb9, #b39cca, #b59dcc, #b69fcf, #b8a0d1, #a393c5, #8d87b9, #787bac, #626f9f);
+        linear-gradient(to bottom, #545e83, #6b6d95, #827da7, #9a8cb9, #b39cca, #b59dcc, #b69fcf, #b8a0d1, #a393c5, #8d87b9, #787bac, #626f9f);
     background-repeat: no-repeat;
     background-position: 12%;
     background-size: contain;
@@ -209,7 +210,7 @@ main.index {
 
 }
 
-.nosotros{
+.nosotros {
     background-color: rgba(4, 0, 5, 0.226);
     border-radius: 10%;
     padding: 5% 8%;
@@ -228,6 +229,7 @@ main.index {
     font-family: 'Wix Madefor Display';
     font-size: 1.2rem;
 }
+
 .brand {
     font-weight: 600;
     text-shadow: 0 0 2px azure;
@@ -235,6 +237,7 @@ main.index {
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
 }
+
 .bottom {
     margin-top: 3%;
     display: flex;
@@ -268,16 +271,18 @@ footer {
     background-color: rgba(255, 39, 39, 0.723);
 
 }
-footer li{
+
+footer li {
     display: inline-block;
     text-decoration: none;
 }
 
-footer li img{
+footer li img {
     width: 30px;
 
 }
-footer a{
+
+footer a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -286,7 +291,7 @@ footer a{
 
 @media screen and (max-width: 960px) {
 
-    .index-section  {
+    .index-section {
         background-size: cover;
     }
 
@@ -351,11 +356,14 @@ footer a{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.373);
+    z-index: 8;
 }
-.main-pestañas{
+
+.main-pestañas {
     padding: 0 20px 50px;
 }
-.main-pestañas>h2{
+
+.main-pestañas>h2 {
     color: azure;
     text-shadow: 0 0 10px black;
     text-transform: capitalize;
@@ -377,13 +385,14 @@ footer a{
 
 .intro-link {
     text-align: center;
-    margin: 0 8% 2%;
+    margin: 0 6% 4%;
 }
 
 .intro-link>a {
     color: #faf9fcfc;
     text-shadow: 0 0 5px rgb(29, 7, 128);
-    box-shadow: 0 0 3px rgb(34, 23, 235);;
+    box-shadow: 0 0 3px rgb(34, 23, 235);
+    ;
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px 15px;
@@ -402,7 +411,8 @@ footer a{
     text-shadow: none;
 }
 
-.fondo-cards>h3, .main-pestañas>h3 {
+.fondo-cards>h3,
+.main-pestañas>h3 {
     margin: 2% 0 4% 3%;
     font-size: 1.5rem;
     font-family: 'Ysabeau SC';
@@ -410,7 +420,8 @@ footer a{
     color: azure;
     text-shadow: 0 0 10px black;
 }
-.fondo-cards{
+
+.fondo-cards {
     background-color: rgba(75, 68, 80, 0.331);
     padding: 50px 20px;
     border-radius: 20px;
@@ -422,12 +433,15 @@ footer a{
     display: grid;
     height: 100%;
     gap: 3%;
+    row-gap: 8%;
     margin: 2%;
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
 }
+
 .container-card {
     border: 2px solid rgb(6, 6, 6);
     background-color: aliceblue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
     border-radius: 20px;
     color: #090909;
     display: grid;
@@ -449,42 +463,57 @@ footer a{
     border: 1px solid rgba(0, 0, 0, 0.381);
     border-radius: 20px;
 }
+
 .name {
     grid-area: nombre;
     width: 95%;
     border-bottom: 1px solid rgb(0, 0, 0);
     justify-content: center;
+    font-family: 'AR One Sans', sans-serif;
 }
+
 .profesion {
     grid-area: profesion;
     justify-content: left;
-
+    font-family: 'AR One Sans', sans-serif;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
+
 .matricula {
     grid-area: matricula;
     margin: 5px 0 0 20px;
+    font-family: 'AR One Sans', sans-serif;
 }
+
 .descripcion {
     grid-area: desc;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: rgb(98, 90, 124);
+    padding-right: 20px;
 }
+
 .container-contacto {
     grid-area: cont;
     display: grid;
     grid-template-columns: auto auto;
     margin-right: 30px;
 }
+
 .container-contacto a {
     color: rgb(15, 7, 112);
 }
-.container-contacto a:active{
+
+.container-contacto a:active {
     color: #81b2e6;
 }
+
 .contacto-mail,
 .contacto-tel {
     height: fit-content;
     justify-self: right;
 }
+
 .box-style {
     display: flex;
     align-items: center;
@@ -493,103 +522,99 @@ footer a{
 }
 
 @media screen and (max-width: 730px) {
-    .container-card{
-        display:flex;
+    .container-card {
+        display: flex;
         flex-direction: column;
         max-width: 75vw;
         padding-bottom: 25px;
-        height:100%
+        height: 100%
     }
-    .intro-link{
+
+    .intro-link {
         margin: 25px;
     }
-    .fondo-cards{
+
+    .fondo-cards {
         padding-bottom: 100px;
-    } 
+    }
 
 }
 
 /*PESTAÑA PROPIEDADES*/
 /* Estilos generales */
+.intro-main~.link2 {
+    padding-top: 3%
+}
 
-.Seccion_Card {
+.seccion_card {
     width: 100%;
-    height: 85vh;
+    height: 100%;
     margin-top: 6%;
 }
 
-.ConteinerCS {
+.container-cards {
     text-align: center;
 }
 
 /* Estilos de la tarjeta */
 .card {
-    width: 350px;
-    height: 460px;
+    width: 380px;
+    height: 100%;
     display: inline-block;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
     margin: 15px 50px 5px 50px;
     padding: 15px;
-    border-radius: 5px;
+    border: 2px solid rgb(6, 6, 6);
+    border-radius: 20px;
 }
 
 .card img {
     width: 100%;
     height: 200px;
     border-radius: 5px;
+    border: 1px solid grey;
 }
 
 .card h3 {
     font-size: 1.3rem;
     margin: 10px 0;
-    color: #090909
+    color: #000000ce;
+    font-family: 'AR One Sans', sans-serif;
 }
 
 .card p {
     font-size: 1rem;
-    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: rgb(98, 90, 124);
     margin-bottom: 3%;
 }
 
-.card a {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    margin: 5px 5px;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
 
-}
-
-
-.Ubicacion {
-    width: 100%;
-    height: 150px;
-    margin: 10px 0;
-}
-
-.Precio {
+.precio {
     font-size: 1.3rem !important;
-    color: #090909 !important;
+    color: #ab10c0 !important;
     font-weight: bold !important;
     margin: 0;
 }
 
 /* Estilos del Formulario */
 
-.btn-MostrarForm {
+.btn-MostrarForm,
+.btn-Detalles {
     width: 40%;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #0e8240;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    margin-left: 20px;
+    margin: 5px;
+}
+
+.btn-MostrarForm {
+    background-color: #0e8240;
 }
 
 .btn-MostrarForm:hover {
@@ -597,15 +622,7 @@ footer a{
 }
 
 .btn-Detalles {
-    width: 40%;
-    padding: 10px 20px;
-    font-size: 16px;
     background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-    margin-left: 20px;
 }
 
 .btn-Detalles:hover {
@@ -613,12 +630,11 @@ footer a{
 }
 
 form {
-    width: 100%px;
+    width: 100%;
     background-color: #f9f7f7cb;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 form h2 {
@@ -626,8 +642,8 @@ form h2 {
     text-align: center;
 }
 
-.enviar {
-    margin: 10px 10px;
+.enviar,
+.cerrar {
     width: 90px;
     height: 40px;
     border-radius: 3px;
@@ -635,19 +651,22 @@ form h2 {
     font-size: 1rem;
 }
 
-.enviar:hover {
-    background-color: #bbbbbb;
-    transition: all 0.5s;
-}
-
 .cerrar {
     margin: 10px 10px;
-    width: 90px;
-    height: 40px;
-    border-radius: 3px;
     background-color: #cf2c2c;
-    font-size: 1rem;
+    color: azure;
+}
 
+.enviar {
+    padding: 0;
+    border: 2px solid black;
+    background-color: #3a118687;
+    color: azure;
+}
+
+.enviar:hover {
+    background-color: #5d1081;
+    transition: all 0.5s;
 }
 
 .cerrar:hover {
@@ -655,28 +674,30 @@ form h2 {
     transition: all 0.5s;
 }
 
+#FormContainer {
+    width: 350px;
+    background-color: #690e57cc;
+    margin-top: 90vh;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    z-index: 5;
+}
+
 form label {
     display: block;
+    background-color: #690e5718;
 }
 
 form input {
     margin: 5px auto;
     width: 100%;
     height: 25px;
-
     border-radius: 3px;
-
-}
-
-#FormContainer {
-    width: 350px;
-    background-color: #737070cc;
-    position: absolute;
-    left: 40%;
-    top: 5%;
-    z-index: 10;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
 }
 
 textarea {
@@ -684,47 +705,59 @@ textarea {
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 2px solid #f30505;
     border-radius: 4px;
-    background-color: #f8f8f8;
     resize: none;
 }
 
 /* Estilos del Cuadro Mas Detalles */
 
 .Mas_Detalles {
-
     width: 50%;
     height: 80%;
     text-align: left;
-    background-color: #926565;
+    background-image: linear-gradient(to right bottom, #000102, #051a2f, #1a2657, #4d2a77, #8b1987);
+    color: azure;
     position: absolute;
     left: 25%;
     top: 20px;
+    margin-top: 85vh;
     z-index: 10;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.67);
     padding: 5px;
     border: solid black 2px;
     overflow: scroll;
     word-wrap: break-word;
-
+    z-index: 5;
 }
 
 .Mas_Detalles img {
     width: 100%;
-    height: 200px;
     border-radius: 5px;
 }
 
+.Mas_Detalles>h3 {
+    font-family: 'Ysabeau SC';
+}
+
+.Precio {
+    font-weight: 800;
+}
+
+.Mas_Detalles>p {
+    font-family: "Quicksand";
+    padding-top: 2%;
+}
+
 .cerrarCuadro {
-    background-color: #e33333;
-    width: 30px;
+    background-color: #fd0505e9;
+    width: 25px;
     height: 25px;
     float: right;
-    margin-bottom: 2px;
-    padding: 1px;
-    border-radius: 3px;
+    margin-bottom: 0px;
+    padding: 0 1px;
+    border-radius: 30%;
     cursor: pointer;
 }
 
@@ -740,43 +773,37 @@ textarea {
 
 }
 
+.Ubicacion {
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+}
+
 /**/
 /**/
 /**/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     /*Inicio breakpoint smarphones*/
-
-    .SubTitulo {
-        font-size: 1.3rem;
-        margin: 5px 0 0px 20px;
-    }
-
 
     /* Estilos de la tarjeta */
     .card {
         width: 80%;
-        height: 400px;
+        height: 100%;
         display: inline-block;
-        background-color: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.321);
         margin: 15px 10px 5px 10px;
-        padding: 15px;
-        border-radius: 5px;
-
+        padding-bottom: 20px;
         font-size: 1rem;
     }
 
     .card img {
         width: 100%;
-        height: 150px;
         border-radius: 5px;
     }
 
     .card h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 10px 0;
-        color: #090909
     }
 
     .card p {
@@ -785,26 +812,27 @@ textarea {
         margin-bottom: 3%;
     }
 
-
-    .Precio {
+    .precio {
         font-size: 1.1rem !important;
-        color: #090909 !important;
         font-weight: bold !important;
-        margin: 0;
     }
 
     /* Estilos del Formulario */
 
-    .btn-MostrarForm {
-        width: 40%;
+    .btn-MostrarForm,
+    .btn-Detalles {
+        width: 35%;
         padding: 10px 20px;
         font-size: 0.9rem;
-        background-color: #0e8240;
         color: #fff;
         border: none;
         cursor: pointer;
         border-radius: 3px;
         margin-left: 20px;
+    }
+
+    .btn-MostrarForm {
+        background-color: #0e8240;
     }
 
     .btn-MostrarForm:hover {
@@ -813,14 +841,7 @@ textarea {
 
     .btn-Detalles {
         width: 40%;
-        padding: 10px 8px;
-        font-size: 0.9rem;
         background-color: #007bff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        border-radius: 3px;
-        margin-left: 20px;
     }
 
     .btn-Detalles:hover {
@@ -828,47 +849,14 @@ textarea {
     }
 
     form {
-        width: 90%px;
-        background-color: #f9f7f7cb;
+        width: 100%;
         padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
     }
 
     form h2 {
-        margin-top: 5px;
+        margin: 3% 0;
         text-align: center;
         font-size: 1.2rem;
-    }
-
-    .enviar {
-        margin: 10px 10px;
-        width: 90px;
-        height: 30px;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 1rem;
-    }
-
-    .enviar:hover {
-        background-color: #bbbbbb;
-        transition: all 0.5s;
-    }
-
-    .cerrar {
-        margin: 10px 10px;
-        width: 90px;
-        height: 30px;
-        border-radius: 3px;
-        background-color: #cf2c2c;
-        font-size: 1rem;
-
-    }
-
-    .cerrar:hover {
-        background-color: #ab0b0b;
-        transition: all 0.5s;
     }
 
     form label {
@@ -879,50 +867,27 @@ textarea {
         margin: 5px auto;
         width: 90%;
         height: 20px;
-        border-radius: 3px;
-
     }
 
     #FormContainer {
         width: 90%;
-        background-color: #737070cc;
         position: absolute;
         left: 5%;
         top: 5%;
-        z-index: 10;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 5;
     }
 
-    textarea {
-        width: 100%;
-        height: 100px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: #f8f8f8;
-        resize: none;
-    }
 
     /* Estilos del Cuadro Mas Detalles */
 
     .Mas_Detalles {
-
         width: 80%;
         height: 80%;
-        background-color: #ded8d8;
         position: absolute;
         left: 10%;
-        top: 10px;
         z-index: 10;
         border-radius: 5px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        padding: 5px;
-        border: solid black 2px;
-        overflow: scroll;
-        word-wrap: break-word;
-
+        z-index: 5;
     }
 
     .Mas_Detalles img {
@@ -932,42 +897,12 @@ textarea {
     }
 
     .Ubicacion {
-
         width: 100%;
-        height: 150px;
-        margin: 10px 0;
+        margin: 40px 0 10px;
     }
 
-    .cerrarCuadro {
-        background-color: #e33333;
-        width: 30px;
-        height: 25px;
-        float: right;
-        margin-bottom: 2px;
-        padding: 1px;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-
-    .cerrarCuadro:hover {
-        background-color: #ad1111;
-        transition: all 0.5s;
-    }
-
-    .btn-imagen {
-        border-radius: 3px;
-        width: 100% !important;
-        height: 100% !important;
-    }
-
-
+    /*Finalizacion breakpoint smarphones*/
 }
-
-/*Finalizacion breakpoint smarphones*/
-
-/**/
-/**/
-/**/
 
 @media screen and (min-width: 1700px) {
     /*Inicio breakpoint Monitores*/
@@ -986,35 +921,27 @@ textarea {
         margin: 5px 0 10px 0px;
     }
 
-
     /* Estilos de la tarjeta */
     .card {
         width: 450px;
         height: 550px;
         display: inline-block;
-        background-color: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
         margin: 30px 20px 5px 30px;
         padding: 15px;
-        border-radius: 5px;
-
     }
 
     .card img {
         width: 100%;
-        height: 250px;
         border-radius: 5px;
     }
 
     .card h3 {
         font-size: 1.6rem;
         margin: 10px 0;
-        color: #090909
     }
 
     .card p {
         font-size: 1.3rem;
-        color: #555;
         margin-bottom: 3%;
     }
 
@@ -1025,9 +952,8 @@ textarea {
         margin: 10px 0;
     }
 
-    .Precio {
+    .precio {
         font-size: 1.6rem !important;
-        color: #090909 !important;
         font-weight: bold !important;
         margin: 20px 0 0 5px;
     }
@@ -1110,19 +1036,6 @@ textarea {
         transition: all 0.5s;
     }
 
-    form label {
-        font-size: 1.2rem;
-        display: block;
-    }
-
-    form input {
-        margin: 5px auto;
-        width: 100%;
-        height: 30px;
-        border-radius: 3px;
-
-    }
-
     #FormContainer {
         width: 20%;
         background-color: #737070cc;
@@ -1132,17 +1045,6 @@ textarea {
         z-index: 10;
         border-radius: 5px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.31);
-    }
-
-    textarea {
-        width: 100%;
-        height: 150px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: #f8f8f8;
-        resize: none;
     }
 
     /* Estilos del Cuadro Mas Detalles */
@@ -1199,39 +1101,42 @@ textarea {
 /*Finalizacion breakpoint Monitores*/
 
 /*PESTAÑA VENDE*/
-.form-intro{
+.form-intro {
     border-radius: 25px;
     padding: 2rem;
     text-align: center;
 }
+
 .body-form {
-    background-image: url(./resources/casa_form.jpg);
+    background-image: url("https://raw.githubusercontent.com/LeanLuna21/TP-OBLIGATORIO/main/imagenes%20de%20fondo/imagereader%20(7).webp?token=GHSAT0AAAAAACGJIAKHBFHQVMFUJZFQKRU6ZI7SWLQ");
+    /* background-image: url("https://raw.githubusercontent.com/LeanLuna21/TP-OBLIGATORIO/main/imagenes%20de%20fondo/imagereader%20(6).webp?token=GHSAT0AAAAAACGJIAKGBGKSYHE2KFPTJHL4ZI7SZ2A");
+    background-image: url(./resources/casa-form.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.formulario{
+.formulario {
     background: rgba(239, 238, 238, 0);
     grid-column: 2/5;
     display: grid;
     /* justify-content: center; */
     gap: 10px;
     margin: 3% auto;
-    grid-template-areas: 
-    'nombre ap'
-    'loc loc'
-    'mail tel'
-    'com com'
-    'com com'
-    'env borrar';
+    grid-template-areas:
+        'nombre ap'
+        'loc loc'
+        'mail tel'
+        'com com'
+        'com com'
+        'env borrar';
     max-width: 60%;
-    
+
 }
 
-input{
-    color:#4c4c4c;
+input {
+    color: #4c4c4c;
     border: none;
     border-radius: 5px;
     background-color: rgba(214, 214, 214, 0.653);
@@ -1241,12 +1146,14 @@ input{
     font-size: 1.3rem;
     font-weight: 500;
 }
-input::placeholder{
-    color:#020101;
+
+input::placeholder {
+    color: #020101;
     font-weight: 300;
 }
-textarea{
-    color:#4c4c4c;
+
+textarea {
+    color: #4c4c4c;
     border: none;
     border-radius: 5px;
     background-color: rgba(214, 214, 214, 0.653);
@@ -1258,48 +1165,69 @@ textarea{
     font-size: 1.3rem;
     font-weight: 500;
 }
-textarea::placeholder{
-    color:#070707;
+
+textarea::placeholder {
+    color: #070707;
     font-weight: 300;
 }
-.enviar-form, .borrar-form{
-    background-color: rgba(230,230,255,0.8); 
+
+.enviar-form,
+.borrar-form {
+    background-color: rgba(230, 230, 255, 0.8);
     color: #070707;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 1rem; 
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 10px;
     width: 50%;
-    justify-self:center;
+    justify-self: center;
 }
-.nombre-form{
+.enviar-form:hover,
+.borrar-form:hover{
+    background-color: rgba(146, 146, 193, 0.8);
+}
+.enviar-form:active,
+.borrar-form:active{
+    background-color: rgba(73, 73, 110, 0.8);
+    color:azure
+}   
+
+.nombre-form {
     grid-area: nombre;
 }
-.apellido-form{
+
+.apellido-form {
     grid-area: ap;
 }
-.localidad-form{
+
+.localidad-form {
     grid-area: loc;
 }
-.email-form{
+
+.email-form {
     grid-area: mail;
 }
-.tel-form{
+
+.tel-form {
     grid-area: tel;
 }
-.comentarios-form{
+
+.comentarios-form {
     grid-area: com;
 }
-.enviar-form{
+
+.enviar-form {
     grid-area: env;
 }
-.borrar-form{
+
+.borrar-form {
     grid-area: borrar;
 }
-.error{
+
+.error {
     color: rgb(255, 255, 255);
     background-color: rgba(202, 64, 64, 0.497);
     width: 40%;
@@ -1307,7 +1235,17 @@ textarea::placeholder{
     text-align: center;
     display: block;
 }
-.invalid{
+
+.invalid {
     box-shadow: 0 0 10px rgb(246, 13, 13);
 }
-   
+
+
+@media screen and (max-width: 800px) {
+    .formulario{
+        max-width: 80%;
+    }
+    .container-formulario input{
+        width: 100%;
+    }
+}
