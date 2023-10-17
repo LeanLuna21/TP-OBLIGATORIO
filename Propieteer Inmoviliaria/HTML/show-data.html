@@ -1,0 +1,49 @@
+<html id="show" lang="en">
+
+<head>
+
+</head>
+
+<body class="body-index-page body-show">
+    <header>
+
+    </header>
+    <main class="main-pestañas show-info">
+        <h1 id="feedback"> Contact Data Sent: </h1>
+        <div id="div-table">
+            <table id="show-table">
+                <tr>
+                    <th>Form Field</th>
+                    <th>Field Value</th>
+                </tr>
+
+                <script language="javascript">
+                    var args = location.search.substring(1).split('&');
+                    for (var i = 0; i < args.length; ++i) {
+                        var parts = args[i].split('=');
+                        if (parts != null) {
+                            var field = parts[0];
+                            var value = parts[1];
+                            if (value == null) {
+                                value = "null"
+                            }
+                            else {
+                                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                            }
+
+                            document.writeln('<tr><td align="center">' + field + '</td>');
+                            document.writeln('<td align="center">' + value + '</td></tr>');
+                        }
+                    }
+                </script>
+
+            </table>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../JAVASCRIPT/main.js"></script>
+</body>
+
+</html>

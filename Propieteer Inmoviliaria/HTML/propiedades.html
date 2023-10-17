@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+</head>
+
+<body class="body-pestañas">
+    <header class="header-pestañas">
+       
+    </header>
+
+    <main class="main-pestañas">
+        <h2>nuestras propiedades</h2>
+        <p class="intro-main">Explore nuestros listados activos más populares a continuación. </p>
+        <p class="intro-main">Para más consultas, si tiene preguntas o desea solicitar un recorrido por una de nuestras
+            casas o condominios en Argentina:</p>
+        <div class="intro-link link2"><a href="vende-con-nos.html">contáctenos</a></div>
+        <section class="seccion_card">
+
+            <div class="fondo-cards container-cards"><!-- inicio div contenedor -->
+
+                <!-- Card 1 -->
+                <!---->
+                <div class="card">
+
+                    <img src="https://www.canexel.es/wp-content/uploads/2021/06/casa-moderna-entramado-madera-barcelona-construccion-canexel-1.jpg" alt="Imagen de la propiedad">
+                    <h3 style="text-align: center;">Casa en venta en Manzana D2 Lote 90, Neuquén</h3>
+                    <p class="precio">| 80.000 USD</p>
+                    <hr>
+                    <p> Casa 3 dormitorios. ¡A estrenar! En venta en el barrio Fincas de Costa Serena de la ciudad de  Plottier, Neuquén.</p>
+                    <button class="btn-MostrarForm" id="mostrarFormulario">Contactar</button>
+                    <button class="btn-Detalles" id="masDetallesC1">Mas Detalles</button>
+
+                </div>
+
+                <!-- Card 2 -->
+                <!---->
+                <div class="card">
+
+                    <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/7f55af49-d569-4cc5-98f2-5e2bb7c07402/AUTOx860/518258dd-32cd-4188-ba12-9270acc4c4f4.webp?"
+                        alt="Imagen de la propiedad">
+                    <h3 style="text-align: center;">Departamento en venta en Av. Lafuente 100, Flores, CABA</h3>
+                    <p class="precio">| 350.000 USD</p>
+                    <hr>
+                    <p>Departamento de 3 Ambientes con vista abierta y lavadero aparte.
+                        Luminoso.<br>En la mejor zona de Flores.</p>
+                    <button class="btn-MostrarForm" id="mostrarForm">Contactar</button>
+                    <button class="btn-Detalles" id="masDetallesC2">Mas Detalles</button>
+
+                </div>
+
+                <!-- Card 3 -->
+                <!---->
+                <div class="card">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLLWrivEfZHuJaODDbZZ6b0r_0rhtXQ218Jw&usqp=CAU"
+                        alt="Imagen de la propiedad">
+                    <h3 style="text-align: center;">Casa en venta en Belén 1000, Merlo, Buenos Aires</h3>
+                    <p class="precio">| 138.000 USD</p>
+                    <hr>
+                    <p>Casa 4 ambientes con cochera en venta. Ciudad de Merlo, Buenos Aires.
+                        <br>
+                        Dos plantas.
+                    </p>
+                    <button class="btn-MostrarForm" id="mostrarForm2">Contactar</button>
+                    <button class="btn-Detalles" id="masDetallesC3">Mas Detalles</button>
+
+                </div>
+
+                <!-- Formulario de contacto -->
+                <!---->
+                <div id="FormContainer" style="display: none;">
+                    <form id="formulario" action="show-data.html" target="_blank">
+                        <h2>Envianos un mensaje</h2>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"><br><br>
+                        <label for="celular">N* Telefono:</label>
+                        <input type="tel" id="celular" name="celular"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+                        <input class="enviar" type="submit" value="Enviar" >
+                    </form>
+                    
+                    <button class="cerrar" id="ocultarForm">Cerrar</button>
+                </div>
+
+
+                <!-- Cuadro Detalles Card-1 -->
+                <!---->
+                <div class="Mas_Detalles" id="cuadroDetallesC1" style="display: none;">
+                    <button class="cerrarCuadro" id="ocultarCuadroC1"><img class="btn-imagen"
+                            src="../resources/cerrar_cuadro.png" alt="Salir"></button>
+                    <img src="https://www.canexel.es/wp-content/uploads/2021/06/casa-moderna-entramado-madera-barcelona-construccion-canexel-1.jpg"
+                        alt="Imagen de la propiedad">
+                    <h3 style="text-align: center;">Casa en venta en Manzana D2 Lote 90, Neuquén</h3>
+                    <p class="Precio">| 80.000 USD</p>
+                    <p>Superficies aproximadas:
+                        <br><br>
+                        Superficie cubierta: 140 m2 <br>
+                        Superficie semicubierta: 12 m2<br>
+                        Superficie del terreno: 396 m2
+                        <br><br>
+                        Distribución:
+                        <br><br>
+                        - Cocina<br>
+                        - Estar-comedor integrados<br>
+                        - Baño Completo<br>
+                        - 3 dormitorios (1 en suite con vestidor)<br>
+                        - Lavadero externo<br>
+                        - Galería<br>
+                        - Entrada para vehículo
+                    </p>
+
+                    <div class="Ubicacion">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6205.534969768563!2d-68.06315099042675!3d-38.952139940799874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ba35eb8e35%3A0x6220acb810e3e2f5!2zTmV1cXXDqW4!5e0!3m2!1ses!2sar!4v1695501365423!5m2!1ses!2sar"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+
+                <!-- Cuadro Detalles Card-2 -->
+                <!---->
+                <div class="Mas_Detalles" id="cuadroDetallesC2" style="display: none;">
+                    <button class="cerrarCuadro" id="ocultarCuadroC2"><img class="btn-imagen"
+                            src="../resources/cerrar_cuadro.png" alt="Salir"></button>
+                    <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/7f55af49-d569-4cc5-98f2-5e2bb7c07402/AUTOx860/518258dd-32cd-4188-ba12-9270acc4c4f4.webp?"
+                        alt="Imagen de la propiedad">
+                    <h3 style="text-align: center;">Departamento en venta en Av. Lafuente 100, Flores, CABA</h3>
+                    <p class="Precio">| 350.000 USD</p>
+                    <p>Entrando nos encontramos con un pasillo que al terminar nos lleva al living, con pisos parquet,
+                        muy luminoso y con vista abierta al pulmón de manzana.
+                        <br>
+                        <br>
+                        A la izquierda se encuentra la cocina con servicio de gas, y la misma lleva al lavadero con
+                        pileta y conexión de lavarropas.
+                        <br>
+                        <br>
+                        Siguiendo por el living vamos a la habitación principal con ventana al pulmón del edificio, con
+                        pisos parquet y a la otra habitación también con ventana al pulmón
+                        <br>
+                        <br>
+                        El baño completo con bañera y bidet
+                        Excelente ubicación, cercano a todos los transportes (subte A, tren, colectivos)
+                        <br>
+                        <br>
+                        Cerca de centro comercial Flores - En 2° piso
+                        <br>
+                        <br>
+                        Imperdible!
+                    </p>
+
+                    <div class="Ubicacion">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.905766748879!2d-58.47014202504898!3d-34.6318215589815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc988a4ec8475%3A0xd0641665c5fa2964!2sAv.%20Lafuente%20100%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1695915714850!5m2!1ses!2sar"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+
+                <!-- Cuadro Detalles Card-3 -->
+                <!---->
+                <div class="Mas_Detalles" id="cuadroDetallesC3" style="display: none;">
+
+                    <button class="cerrarCuadro" id="ocultarCuadroC3"><img class="btn-imagen"
+                            src="../resources/cerrar_cuadro.png" width="100%" height="100%" alt="Salir"></button>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLLWrivEfZHuJaODDbZZ6b0r_0rhtXQ218Jw&usqp=CAU"
+                        alt="Imagen de la propiedad">
+                    <h3 style="text-align: center;">Casa en venta en Belén 1000, Merlo, Buenos Aires</h3>
+                    <p class="Precio">| 138.000 USD</p>
+                    <p> Ubicada en un entorno tranquilo y residencial se vende esta hermosa casa, ubicada en Merlo sur,
+                        con un lote 210 m2 y 180 m2 desarrollados en dos plantas, de comodas dimensiones, un lugar ideal
+                        para vos y tu familia con todas las comodidades que necesitas.
+                        A pocas cuadras del centro de Merlo, rodeada de comercios, escuelas y líneas de colectivos.
+                        <br><br>
+                        La planta baja cuenta con:<br>
+                        - LIVING COMEDOR<br>
+                        - COCINA COMEDOR<br>
+                        - 2 DORMITORIOS<br>
+                        - BAÑO<br>
+                        - COCHERA<br>
+                        - PATIO CON PARRILLA
+                    <div class="Ubicacion">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104990.54774265036!2d-58.83590385948559!3d-34.68109485355766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc95434093dd6b%3A0x58d832f755e4a278!2sMerlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1695502159565!5m2!1ses!2sar"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+                </div>
+
+            </div> <!-- fin div contenedor -->
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="../JAVASCRIPT/main.js"></script>
+    <script src="../JAVASCRIPT/Card-Casa.js"></script>
+</body>
+
+</html>

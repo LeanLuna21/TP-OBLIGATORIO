@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+</head>
+
+<body class="body-pestañas">
+    <header class="header-pestañas">
+        
+    </header>
+
+    <main class="main-pestañas">
+        <h2>nuestros profesionales</h2>
+        <p class="intro-main">Ya sea que esté buscando comprar o vender una casa o un condominio en Buenos Aires y
+            alrededores tiene un agente para ayudarlo. <span class="brand">Propieteer</span> ofrece disponibilidad de agentes los 7
+            días de la semana para que siempre tenga alguien con quien comunicarse si tiene alguna pregunta. Todo el
+            equipo de <span class="brand">Propieteer</span> reconoce la importancia de promover la reputación cuidadosamente cultivada
+            por la compañia en materia de calidad, profesionalismo y, sobre todo, resultados.</p>
+        <p class="intro-main">¿No está seguro de qué agente es el adecuado para usted? Para hablar con nosotros para así
+            conectarlo con el agente perfecto para sus necesidades específicas:</p>
+        <div class="intro-link">
+            <a href="vende-con-nos.html">contáctenos</a>
+        </div>
+        <div class="fondo-cards">
+            <h3>Agentes disponibles:</h3>
+            <div class="profesionales-container">
+                <div class="container-card">
+                    <img class="prof-photo" src="../resources/realtor1.png" alt="realtor photo 1">
+                    <h3 class="name box-style">Armando S. Puerta</h3>
+                    <h6 class="matricula">Matricula: 0 18-08256</h6>
+                    <h5 class="profesion box-style">Corredor Inmoviliario</h5>
+                    <p class="descripcion box-style"> Con más de 10 años en la industria de Bienes Raices, el Sr. Puerta ha abierto la posibilidad a miles de personas para que puedan acceder a casas y departamentos que se ajusten a sus necesidades. Contáctelo para saber cómo.</p>
+                    <div class="container-contacto">
+                        <p class="contacto-mail"><a
+                                href="mailto:armando.puertas@gmail.com?Subject: Me gustaria contratarte como realtor">armando.puertas@gmail.com</a>
+                        </p>
+                        <p class="contacto-tel"><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=115557286325&text=Hola!%20Me%20gustaría%20hacer%20unar%20consulta%20%F0%9F%98%8A">+549
+                                1188647922</a></p>
+                    </div>
+                </div>
+                <div class="container-card">
+                    <img class="prof-photo" src="../resources/realtor2.png" alt="realtor photo 2">
+                    <h3 class="name box-style">Viviana Casas</h3>
+                    <h6 class="matricula">Matricula: 0 18-97462</h6>
+                    <h5 class="profesion box-style">Contadora y Asesora Comercial</h5>
+                    <p class="descripcion box-style">La señorita Casas ha colaborado con nuestra compañia desde sus comienzos. Una excelente profesional cuya presencia es inspiradora tanto para nosotros como para los clientes, por su reconocimiento e influencia en la industria. </p>
+                    <div class="container-contacto ">
+                        <p class="contacto-mail"><a
+                                href="mailto:ms.viviana.casas@gmail.com?Subject: Me gustaria contratarte como realtor">ms.viviana.casas@gmail.com</a>
+                        </p>
+                        <p class="contacto-tel"><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=115557286325&text=Hola!%20Me%20gustaría%20hacer%20unar%20consulta%20%F0%9F%98%8A">+549
+                                1196471832</a></p>
+                    </div>
+                </div>
+                <div class="container-card">
+                    <img class="prof-photo" src="../resources/realtors3.png" alt="realtor photo 3">
+                    <h3 class="name box-style">Los hermanos Locke</h3>
+                    <h6 class="matricula">Matricula: 0 18-05319</h6>
+                    <h5 class="profesion box-style">Agentes inmoviliarios</h5>
+                    <p class="descripcion box-style"> Este par no tiene igual. Johanna y Matías Locke son la prueba viviente que dos cerebros piensan más que uno. Sus consejos junto con su experiencia y competencia los hacen el mejor dúo a la hora de tomar decisiones. </p>
+                    <div class="container-contacto ">
+                        <p class="contacto-mail"><a
+                                href="mailto:los-locke@gmail.com?Subject: Me gustaria contratarte como realtor">los-locke@gmail.com</a>
+                        </p>
+                        <p class="contacto-tel"><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=115557286325&text=Hola!%20Me%20gustaría%20hacer%20unar%20consulta%20%F0%9F%98%8A">+549
+                                115557286325</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <section id="app" class="other-agents-section">
+            <h3 class="other-agents-title">Otros agentes que podrían interesarte: </h3>
+            <div v-for="agente in datos" class="other-agents-container">
+                <p class="nombre-agente">{{agente.name.first}} {{agente.name.last}}</p>
+                <img class="agente-pic" :src="agente.picture.large" :alt="agente.name.first">
+                <p class="agente-info tel"> {{agente.cell}}</p>
+                <p class="agente-info">{{agente.location.city}} </p>
+        </section>
+    </main>
+
+    <footer>
+   
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../JAVASCRIPT/main.js"></script>
+</body>
+
+</html>

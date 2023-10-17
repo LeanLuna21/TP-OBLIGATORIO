@@ -1,0 +1,30 @@
+.show-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 5rem;
+}
+.show-info>h1{
+    font-family: 'Quicksand'!important;
+    font-weight: 900!important;
+}
+#div-table{
+    overflow-x:scroll;
+}
+#show-table{
+    line-height: 1.5rem;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid white;
+    padding: 10px 50px;
+    font-family: 'Quicksand'!important;
+}
+td{
+    max-width: 700px;
+}
+tr:hover {
+    background-image: linear-gradient(to bottom, #545e83, #6b6d95, #827da7, #9a8cb9, #b39cca, #b59dcc, #b69fcf, #b8a0d1, #a393c5, #8d87b9, #787bac, #626f9f);
+}
+
